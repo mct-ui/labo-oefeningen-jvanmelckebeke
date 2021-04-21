@@ -26,7 +26,7 @@
 
 /*
     Generic: Page
-    ---
+    ----
     Global page styles + universal box-sizing:
 */
 
@@ -76,7 +76,7 @@ html {
 
 /*
     Elements: Images
-    ---
+    ----
     Default markup for images to make them responsive
 */
 
@@ -87,7 +87,7 @@ img {
 
 /*
     Elements: typography
-    ---
+    ----
     Default markup for typographic elements
 */
 
@@ -187,7 +187,7 @@ a:focus {
 
 /*
     Objects: Row
-    ---
+    ----
     Creates a horizontal row that stretches the viewport and adds padding around children
 */
 
@@ -222,7 +222,7 @@ a:focus {
 
 /*
     Objects: Container
-    ---
+    ----
     Creates a horizontal container that sets de global max-width
 */
 
@@ -237,7 +237,7 @@ a:focus {
 
 /*
     Objects: section
-    ---
+    ----
     Creates vertical whitespace between adjacent sections inside a row
 */
 
@@ -264,7 +264,7 @@ a:focus {
 
 /*
     Objects: Layout
-    ---
+    ----
     The layout object provides us with a column-style layout system. This object
     contains the basic structural elements, but classes should be complemented
     with width utilities
@@ -379,7 +379,7 @@ a:focus {
 
 /*
     Objects: List
-    ---
+    ----
     Small reusable object to remove default list styling from lists
 */
 
@@ -392,8 +392,56 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+/*
+    Components: Logo
+    ----
+    Logo component
+*/
 .c-logo {
   height: 32px;
+}
+
+.c-header {
+  display: block;
+}
+
+.c-nav {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.c-nav__list {
+  display: block;
+}
+
+.c-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .c-nav__link {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .c-nav__link:hover {
+    color: #dbedff;
+    text-shadow: 0 0 8px #8ec7ff;
+  }
 }
 
 /*------------------------------------*\
@@ -402,7 +450,7 @@ a:focus {
 
 /*
     Utilities: color
-    ---
+    ----
     Utility classes to put specific colors onto elements
 */
 
@@ -411,7 +459,7 @@ a:focus {
 
 /*
     Utilities: spacing
-    ---
+    ----
     Utility classes to put specific margins and paddings onto elements
 */
 
@@ -445,7 +493,7 @@ a:focus {
 
 /*
     Utilities: max-width
-    ---
+    ----
     Utility classes to put specific max widths onto elements
 */
 
@@ -475,7 +523,7 @@ a:focus {
 
 /*
     Utility: Flex
-    ---
+    ----
     Utility classes to put specific flex properties onto elements
     Will be mostly used on o-layout__item
 */
@@ -682,7 +730,7 @@ a:focus {
 
 /*
     Media Queries
-    ---
+    ----
     EXAMPLE Media Queries for Responsive Design.
     These examples override the primary ('mobile first') styles.
     USE THEM INLINE!
@@ -710,7 +758,7 @@ a:focus {
 
 /*
     Print styles.
-    ---
+    ----
     Inlined to avoid the additional HTTP request:
     http://www.phpied.com/delay-loading-your-print-css/
 */
