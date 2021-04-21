@@ -37,6 +37,11 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(to right bottom, #0a257d, #061649);
+  background-attachment: fixed;
+
+  color: white;
 }
 
 *,
